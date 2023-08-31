@@ -12,8 +12,8 @@ jobs:
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     env:
-      DBT_USER: ${{ secrets.VERTICA_USER }}
-      DBT_PASSWORD: ${{ secrets.VERTICA_PASSWORD }}
+      VERTICA_USER: ${{ secrets.VERTICA_USER }}
+      VERTICA_PASSWORD: ${{ secrets.VERTICA_PASSWORD }}
 
     steps:
       - name: Checkout branch
