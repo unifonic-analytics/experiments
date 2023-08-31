@@ -4,7 +4,7 @@ cron_jobs_test:
       connection_load_balance: true
       database: verticadb
       host: verticadb.data.prod.oci.ksa.cloud.unifonic.com
-      password: {{ env_var('VERTICA_PASSWORD') }}
+      password: "{{ env_var('VERTICA_PASSWORD') }}"
       port: 5433
       retries: 1
       schema: analytics
