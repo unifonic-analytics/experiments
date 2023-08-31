@@ -1,0 +1,14 @@
+cron_jobs_test:
+  outputs:
+    dev:
+      connection_load_balance: true
+      database: verticadb
+      host: verticadb.data.prod.oci.ksa.cloud.unifonic.com
+      password: {{ env_var('VERTICA_PASSWORD') }}
+      port: 5433
+      retries: 1
+      schema: analytics
+      threads: 1
+      type: vertica
+      username: "{{ env_var('VERTICA_USER') }}"
+  target: dev
