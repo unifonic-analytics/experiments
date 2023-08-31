@@ -25,7 +25,7 @@ jobs:
           python-version: '3.9'
           
       - name: Install dbt
-        run: pip3 install dbt-snowflake
+        run: pip3 install dbt-vertica
 
       - name: Deploy & Test Models (CI)
         run: dbt build --profiles-dir . --target dev
