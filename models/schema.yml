@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: oy_cron_test
+  - name: oy_dbt_cron_test
     description: "A starter dbt model"
     columns:
       - name: id
